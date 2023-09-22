@@ -1,0 +1,113 @@
+/* reset CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+/* block contain toast message*/
+.block  {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+
+/* Toast */
+.toast {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 432px;
+    border-radius: 6px;
+}
+
+
+.toast + .toast {
+    margin-top: 10px;
+}
+
+.toast > * {
+    padding: 10px;
+}
+
+.toast__close i,
+.toast__icon i {
+    font-size: 20px;
+}
+
+.toast__body {
+    flex-grow: 1;
+}
+
+.toast__title {
+    font-weight: 900;
+}
+
+/* Toast modifier */
+.toast--success {
+    background-color: #b7f7c4;
+}
+
+.toast--info {
+    background-color: #b3e6f5;
+
+}
+
+.toast--warning {
+    background-color: #fbe7c6;
+
+}
+
+.toast--error {
+    background-color: #ffb7b6;
+
+}
+
+
+/* Button Box */
+.btn-box {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    max-width: 130px;
+}
+
+.btn-box > * {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    
+}
+
+.btn-box > *:hover {
+    opacity: 0.8;
+}
+
+.btn--success {
+    background-color: #b7f7c4;
+    
+}
+
+.btn--info {
+    background-color: #b3e6f5;
+
+}
+
+.btn--warning {
+    background-color: #fbe7c6;
+
+}
+
+.btn--error {
+    background-color: #ffb7b6;
+
+}
